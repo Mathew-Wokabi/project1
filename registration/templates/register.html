@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" context="width=device-width,initial-scale=1.0"
+    <title>Register students</title>
+    <style>
+       table {
+           border-collapse:collapse;
+           width:100%
+        }
+       th,td {
+           border:1px solid #dddddd;
+           text-align: left;
+           padding: 8px;
+       }
+       th{
+           background-color: aqua;
+       }
+    </style>
+</head>
+<body>
+<h1>Registered students</h1>
+<table>
+    <thead>
+    <tr>
+        <th>name</th>
+        <th>email</th>
+        <th>age</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for student in students %}
+    <tr>
+        <td>{{ student.name }}</td>
+        <td>{{ student.name }}</td>
+        <td>{{ student.name }}</td>
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>
+</body>
+</html>

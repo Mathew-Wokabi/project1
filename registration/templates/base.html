@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+        {% block title %}
+        default time
+        {% endblock %}
+    </title>
+</head>
+<body>
+<li><a href="{% url 'my home' %}" style="color: red;font-size: 40px;">Home</a><a href="{% url 'myloginpage' %}" style="color:red;font-size: 40px;">Login</a></li>
+
+<header>
+    {% block title %}
+    default header
+    {% endblock %}
+</header>
+
+<main>
+    {% block content %}
+    <p>my content</p>
+    {% endblock %}
+</main>
+<footer>
+    {% block footer %}
+    <p>2024 my site </p>
+    {% end block %}
+</footer>
+</body>
+</html>
